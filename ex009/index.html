@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <hr>
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript. Note, todavia, que as letras do referido comando estão muito bem caracterizadas, diferente das demais. Isso se dá pelo <strong>uso do código &lt;code&gt;</strong>.</p>
+    <h3>Preste atenção! O código &lt;code&gt; não organiza com identação. Fica tudo bagunçado.</h3>
+        
+    <!--Código em Python-->
+    
+    <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR)
+    else:
+        print(f'O número {num} é ÍMPAR)
+        print('Fim do programa')
+    </code>
+
+    <!--Utilizando texto sem formatação/identação-->
+
+    <h3>Olha agora utilizando o comando &lt;pre&gt; como fica:</h3>
+    <pre><code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print(f'O número {num} é PAR)
+        else:
+            print(f'O número {num} é ÍMPAR)
+            print('Fim do programa')
+    </code></pre>
+    <p>And that's how you win the game!</p>
+    
+    <hr>
+     <!--Citações Simples
+    Importante entender como fazer citações-->
+    
+    
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo de um amigo meu: o computador é um burro muito rápido</p>
+    <h3>Acha que fica melhor como? Da forma como foi feito acima ou utilizando o código &lt;q&gt;, abaixo?</h3>
+    <p>Como diria o pai de um amigo de um amigo meu <q>o computador é um burro muito rápido</q>.</p>
+    
+    <hr>
+     <!--Citações Completas-->
+        
+    <h2>Citações completas</h2>
+    <p>Segundo os gregos, no seu livro <strong>Os 300 de Sparta:</strong></p>
+    
+    <blockquote><em>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto ducimus deleniti impedit harum modi deserunt, quis debitis inventore iusto ab eveniet cumque soluta fugit nemo ratione sequi laudantium fugiat consequatur.</em></blockquote>
+    
+    <p>Presta atenção em outra coisa, é importante você deixar avisado para o navegador de onde você extraiu essa fonte. Por isso, dentro do código &lt;blockquote&gt; utilize o código <q>cite</q>, dessa forma:</p>
+    <pre>
+        &lt;blockquote cite="endereço da fonta na web&gt;
+    </pre>
+    <h3>Observação</h3>
+    <p>Isso não fará aprecer nada de diferente no front end, mas o navegador e os serviços de busca saberão. Apenas pelo exemplo, vai aparecer assim:</p>
+
+    <blockquote cite="www.vaiprocurar.com.br/jeffnobledisse"><em>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto ducimus deleniti impedit harum modi deserunt, quis debitis inventore iusto ab eveniet cumque soluta fugit nemo ratione sequi laudantium fugiat consequatur.</em></blockquote>
+
+    <hr>
+
+    <!--Abreviações-->
+    <h2>Abreviações</h2>
+    <p>Olha que top isso!! Estou estudando <strong><abbr title="HyperText Markup Language">HTML</abbr></strong> e <strong><abbr title="Cascading Style Sheets">CSS</abbr></strong>.</p>
+    <hr
+
+    
+    <!--Texto Invertido (acho que nunca utilizarei esta merda)-->
+
+    <h2>Texto invertido</h2>
+    <p>A tag &lt;bdo&gt; virá com um complemento <q>dir=</q> para você escrever a sintaxe <q>rtl</q>, que significa <strong><q>right to left</q></strong> vai te pedir se você quer fazer o texto da direito para a esquerda ou ao contrário. É bizarro. O texto <q>o brasil é o país das maravilhas</q> seria escrito assim assim:</p>
+    <p><pre>
+    &lt;bdo dir="rtl"&gt;O Brasil é o pais das maravilhas.</pre></p>
+    <p>Mas vai aparecer assim:</p>
+    <p><bdo dir="rtl">O Brasil é o país das maravilhas.</bdo></p>
+    <hr>
+
+
+
+</body>
+</html>
