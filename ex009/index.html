@@ -7,8 +7,78 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!--Começa aqui-->
+
     <h1>Trabalhando com listas</h1>
+    <hr>
+    <h2>Listas ordendadas</h2>
+    <p>Existe um comando chamado <q>ordered list</q>, cujo código é &lt;ol&gt;, que ordena uma série de coisas em listas, automaticamente, sem que seja necessário ficar adicionando o número de cada linha. Para isso, é necessário escrever a série de coisas dentro da tag &lt;li&gt;. Antigamente era necesário fechar a tag, mas atualmente não há mais essa necessidade. Funciona assim:</p>
+    <pre>
+    &lt;ol&gt;
+        &lt;li&gt;Acordar
+        &lt;li&gt;Tomar banho
+        &lt;li&gt;Tomar café
+    &lt;/ol&gt;</pre>
+    <p>Esse código vai aparecer assim:</p>
+    <ol>
+        <li>Acordar
+        <li>Tomar banho
+        <li>Tomar café
+    </ol>
+    <h3>Observação</h3>
+    <p>Não precisa acidionar o <strong>&lt;/li&gt;</strong>. 
+    <hr>
+
+    <!--Personalizando listas-->
+
+    <h2>Personalizando listas</h2>
+
+    <!--Tipos de listas-->
+
+    <p>Podemos adicionar o parâmetro <q>type</q> dentro da tag Ordered List. Será possível escolher entre cinco tipos diferentes:</p>
+    <ol type="1">
+        <li>Tipo 1 (numeral)
+    </ol>
+    <ol type="A">
+        <li>Tipo 2 (letra maiúscula)
+    </ol>
+    <ol type="a">
+        <li>Tipo 3 (letra minúscula)
+    </ol>
+    <ol type="I">
+        <li>Tipo 4 (números romanos maiúscula)
+        <li>Teste
+    </ol>
+    <ol type="i">
+        <li>Tipo 5 (números romanos minúsculo)
+        <li>Teste
+    </ol>
     
+    <!--Adicionando o parâmetro START-->
+
+    <p>É possível ainda informar em qual ordem deseja começar a lista, utilizando o parâmetro <strong><q>start</q></strong>:</p>
+    <ol type="1" start="22">
+        <li>Tipo 1 
+    </ol>
+    <hr>
+
+    <!--Listas não-ordenadas
+    Dentro do parâmetro TYPE basta apertar ctrl + espaço que aparecem as opções-->
+
+    <h2>Listas não-ordenadas</h2>
+    <p>Se listas ordenadas são Ordered Lists, listas não-ordenadas são Unorderes Lists.</p>
+    <ul type="disc">
+        <li>Padrão (disc)
+    </ul>
+    <ul type="circle">
+        <li>Circle
+    </ul>
+    <ul type="square">
+        <li>Square
+    </ul>
+
     
+
 </body>
 </html>
