@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página 1</title>
+    </head>
+    <body>
+        <h1>Usando links externos</h1>
+        <hr>
+        <h2>Abrir links em novas abas</h2>
+            <p>Este exercício vai te mostrar como adicionar links ao seu código e a seu site. É simples. Por exemplo, caso queira acessar meu repositório no GitHub, <a href="https://github.com/danielpinheiro6" target="_blank" rel="external">clique aqui</a>.</p>
+
+    <!--Explicação-->
+
+        <h3>Por que isso acontece?</h3>
+            <p>Porque adicionamos os atributos target="_blanc" e também o atributo rel="external". Isso também é interessante para o SEO. Com isso, o código fica assim:</p>
+
+        <pre>
+        &lt;<strong>a href</strong>="endereço do site" <strong>target</strong>="_blanc" <strong>rel</strong>="external"&gt;
+        </pre>
+        <hr>
+
+        <!--Acessando Links Internos-->
+
+        <h2>Acessando agora links internos</h2>
+            <p>Links internos servem para navegar dentro da página. Vamos ver como isso funciona &#x1F600;</p>
+            <p>Acima a gente consegue acessar links externos. Ok! Agora, para acessar a outra parte da minha página basta <a href="pag002.html" mark style=" background-color: rgb(181, 181, 240);" rel="next">clicar aqui</a>.&#x1F448;</p>
+        <hr>
+
+        <!--Explicação-->
+
+        <h2>Atenção para tag <strong>"rel"</strong></h2>
+            <p>A tag "rel" serve para informar ao SEO o que queremos ou estamos fazendo.</p>
+            <dt>rel="next"</dt>
+            <dd>Com essa, estamos informando ao SEO que se trata da próxima página, um sequência. Nós informamos ao SEO o que aquele clique significa. Isso tem valor.</dd>
+            <dt>rel="prev"</dt>
+            <dd>Abreviatura de <em>previous</em>. A mesma coisa, mas informamos ao SEO que se trata da página anterior.</dd>
+            <dt>rel="nofollow"</dt>
+            <dd>Se for link externo, estamos dizendo ao SEO que não "aprovamos". Não temos nada a ver com o assunto, mas que pode ser acessado através do link.</dd>
+            <hr>
+        
+            <!--Acessar outra pasta dentro do mesmo projeto-->
+        
+        <h2>Você também pode acessar nossa página de notícias.</h2>
+        <p>Basta clicar <a href="noticias/pag003.html" mark style="background-color: aquamarine;">aqui</a>.</p> 
+    </body>
+</html>
