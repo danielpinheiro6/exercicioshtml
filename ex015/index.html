@@ -7,6 +7,9 @@
     <title>Mídias em HTML5</title>
 </head>
 <body>
+
+    <!--Imagens Dinâmicas-->
+    
     <h1>Imagens dinâmicas</h1>
     <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
 
@@ -15,7 +18,46 @@
         <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
         <img src="imagens/foto-g.png" alt="foto-g">
     </picture>
+    <hr>
 
+    <!--Reprodução de áudio-->
+    
+    <!--Primeira forma de reproduzir. Não é a melhor! É possível adicionar o parâmetro "autoplay" -->
+    <h1>Reproduzindo áudio</h1>
+    <p>Veja como reproduzir áudio em HTML5.</p>
+    <pre><code>
+        &lt;audio src="midias/know-mysellf.mp3" controls&gt;&lt;/audio&gt;</code></pre>
+
+
+
+    <audio src="midias/know-mysellf.mp3" controls></audio>
+
+    <!--São aceitos formatos MP3 WAV OGG-->
+
+  
+    <!--Outra forma, mais adequada-->
+    <p>Apresento-lhes, agora, o jeito mais correto:</p>
+    <pre><code>
+        &lt;audio controls preload="metadata"&gt;
+            &lt;source src="midias/know-mysellf.mp3" type="audio/mpeg"&gt;
+        &lt;/audio&gt;
+    </code></pre>
+
+    <audio controls preload="metadata">
+         <source src="midias/know-mysellf.mp3" type="audio/mpeg">
+    </audio>
+    <p>Caso não toque o áudio significa que você errrrrouuu!</p>
+
+    <!--É possível aicionar o comando "loop"-->
+
+    <hr>
+
+    <h1>Now we shall add videos!</h1>
+    <p>Veja se você consegue adicionar vídeos sozinho:</p>
+
+    <video controls>
+
+    <!--<source src="midias/video.mp4" type="video/mp4"></video>-->
 
 </body>
 </html>
