@@ -43,6 +43,8 @@
         &lt;/audio&gt;
     </code></pre>
 
+    <!-- Inserindo controls-->
+
     <audio controls preload="metadata">
          <source src="midias/know-mysellf.mp3" type="audio/mpeg">
     </audio>
@@ -55,9 +57,31 @@
     <h1>Now we shall add videos!</h1>
     <p>Veja se você consegue adicionar vídeos sozinho:</p>
 
-    <video controls>
+    <!-- Inserindo poster-->
 
-    <!--<source src="midias/video.mp4" type="video/mp4"></video>-->
+    <video width="300" loop poster="imagens/foto-g.png">
+        <source src="midias/video.mp4" type="video/mp4">
+        <source src="midias/video.mp4" type="video/mp4">
+    </video>
+
+    <!-- Inserindo autoplay-->
+
+    <video width="300" loop autoplay>
+        <source src="midias/video.mp4" type="video/mp4">
+        <source src="midias/video.mp4" type="video/mp4">
+    </video>
+
+    <hr>
+
+    <h1>Inserindo vídeos de fontes externas</h1>
+    <p>Assim que se coloca vídeos de fontes externas.</p>
+
+    <iframe width="360" height="315" src="https://www.youtube.com/embed/z9Uz1icjwrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
 
 </body>
 </html>
